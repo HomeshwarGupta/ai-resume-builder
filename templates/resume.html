@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generated Resume</title>
+</head>
+
+<body style="background:#f4f6f9; margin:0; padding:0; font-family: Arial, sans-serif;">
+
+    <div style="
+        width: 65%;
+        margin: 40px auto;
+        background: white;
+        padding: 50px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        border-radius: 8px;
+    ">
+
+        <!-- Name -->
+        <h1 style="text-align:center; margin-bottom:5px;">
+            {{ name }}
+        </h1>
+
+        <!-- Contact -->
+        <p style="text-align:center; color:gray; margin-top:0;">
+            {{ email }} | {{ phone }}
+        </p>
+
+        <hr style="margin:25px 0;">
+
+        <!-- AI Generated Resume Content -->
+        <div style="line-height:1.6;">
+            {{ ai_resume | safe }}
+        </div>
+
+    </div>
+
+</body>
+</html>
