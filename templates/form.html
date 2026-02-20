@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Resume Builder</title>
+</head>
+
+<body style="background:#f4f6f9; margin:0; font-family: Arial, sans-serif;">
+
+    <div style="
+        width: 50%;
+        margin: 50px auto;
+        background: white;
+        padding: 40px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        border-radius: 8px;
+    ">
+
+        <h2 style="text-align:center;">AI Resume Builder</h2>
+
+        <form action="/generate" method="POST">
+
+            <input type="text" name="name" placeholder="Full Name" required
+            style="width:100%; padding:10px; margin-bottom:15px;">
+
+            <input type="email" name="email" placeholder="Email" required
+            style="width:100%; padding:10px; margin-bottom:15px;">
+
+            <input type="text" name="phone" placeholder="Phone" required
+            style="width:100%; padding:10px; margin-bottom:15px;">
+
+            <input type="text" name="degree" placeholder="Degree" required
+            style="width:100%; padding:10px; margin-bottom:15px;">
+
+            <input type="text" name="university" placeholder="University" required
+            style="width:100%; padding:10px; margin-bottom:15px;">
+
+            <input type="text" name="year" placeholder="Passing Year" required
+            style="width:100%; padding:10px; margin-bottom:15px;">
+
+            <textarea name="skills" placeholder="Skills (comma separated)" required
+            style="width:100%; padding:10px; margin-bottom:15px; height:80px;"></textarea>
+
+            <textarea name="experience" placeholder="Experience" required
+            style="width:100%; padding:10px; margin-bottom:20px; height:80px;"></textarea>
+
+            <button type="submit"
+            style="width:100%; padding:12px; background:#007bff; color:white; border:none; font-size:16px; cursor:pointer;">
+                Generate Resume
+            </button>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
